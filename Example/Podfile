@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XCShoppingCart_Example' do
+  pod 'XCShoppingCart', :path => '../'
+
+  target 'XCShoppingCart_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
