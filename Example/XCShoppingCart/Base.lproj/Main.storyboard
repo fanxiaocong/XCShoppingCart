@@ -20,7 +20,39 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSC-Jo-8LU">
+                                <rect key="frame" x="30" y="120" width="50" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.2901960784" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="nBI-m7-Mm3"/>
+                                    <constraint firstAttribute="height" constant="30" id="wFC-NR-fEO"/>
+                                </constraints>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="didClickMinusButtonAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="fia-7Y-Icy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eA9-86-WNS">
+                                <rect key="frame" x="295" y="120" width="50" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.2901960784" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="tYb-oM-Jnz"/>
+                                    <constraint firstAttribute="height" constant="30" id="zhD-Q7-cel"/>
+                                </constraints>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="didClickAddButtonAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="IFD-7l-ol8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eA9-86-WNS" secondAttribute="trailing" constant="30" id="9L4-nL-ngB"/>
+                            <constraint firstItem="eA9-86-WNS" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="100" id="B1f-KJ-bZZ"/>
+                            <constraint firstItem="zSC-Jo-8LU" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="100" id="Qqh-EO-Tt0"/>
+                            <constraint firstItem="zSC-Jo-8LU" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="30" id="fUf-ej-tQL"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>

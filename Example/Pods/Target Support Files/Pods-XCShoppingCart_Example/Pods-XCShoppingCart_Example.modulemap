@@ -1,0 +1,6 @@
+framework module Pods_XCShoppingCart_Example {
+  umbrella header "Pods-XCShoppingCart_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
