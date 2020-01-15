@@ -332,7 +332,7 @@
 - (void)disabledCartBarUI
 {
     self.priceLabel.font = [UIFont systemFontOfSize:13];
-    self.priceLabel.text = @"购物车空空如也〜";
+    self.priceLabel.text = self.placeholder ?: @"购物车空空如也〜";
     self.priceLabel.textColor = [UIColor grayColor];
     self.cartButton.enabled = NO;
     self.enterButton.enabled = NO;
@@ -363,6 +363,7 @@
         
         CGRect listViewF = self.listView.frame;
         listViewF.size.height = [self fetchListViewHeight];
+        listViewF.origin.y = CGRectGetHeight(self.listContainerView.bounds) - [self fetchListViewHeight];
         
         /// 更新 listView 的高度
         [UIView animateWithDuration:.5f animations:^{

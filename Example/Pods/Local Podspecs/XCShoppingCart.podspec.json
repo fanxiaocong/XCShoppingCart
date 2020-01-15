@@ -1,6 +1,6 @@
 {
   "name": "XCShoppingCart",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "XCShoppingCart 自定义购物车UI页面，使用简单",
   "description": "XCShoppingCart，自定义购物车UI页面，使用简单",
   "homepage": "https://github.com/fanxiaocong/XCShoppingCart",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/fanxiaocong/XCShoppingCart.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "platforms": {
     "ios": "8.0"

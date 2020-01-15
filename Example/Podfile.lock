@@ -1,13 +1,13 @@
 PODS:
   - JSBadgeView (1.4.1)
-  - XCShoppingCart (0.0.1):
+  - XCShoppingCart (0.0.2):
     - JSBadgeView (~> 1.4.1)
 
 DEPENDENCIES:
   - XCShoppingCart (from `../`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - JSBadgeView
 
 EXTERNAL SOURCES:
@@ -16,8 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   JSBadgeView: 3861ddee41094284d9468e6d0af5107f703aaac5
-  XCShoppingCart: 9c05f994878afd3c8b5c7cab8e0b04f8c8c2eb6b
+  XCShoppingCart: c31690144d23b8842a53d0f5c3b8a37ace2457f9
 
 PODFILE CHECKSUM: e74c8a7db7ea2f20429e549e733716a4ccd5d884
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.7.5

@@ -39,6 +39,8 @@
 @property (strong, nonatomic) UIColor *badgeColor;
 /// 角标背景颜色：默认 redColor
 @property (strong, nonatomic) UIColor *badgeBackgroundColor;
+/// 占位文字：默认 “购物车空空如也〜”
+@property (copy, nonatomic) NSString *placeholder;
 
 /// 打开购物车
 @property (assign, nonatomic, getter=isOpen) BOOL open;

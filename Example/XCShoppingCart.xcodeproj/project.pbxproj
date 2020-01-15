@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E2CA48823CF00FC00566159 /* XCTTTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2CA48623CF00FC00566159 /* XCTTTCell.m */; };
+		1E2CA48923CF00FC00566159 /* XCTTTCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E2CA48723CF00FC00566159 /* XCTTTCell.xib */; };
 		3D58EC228A16BE7EDFD23316 /* Pods_XCShoppingCart_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8F682DDCA6FF7173E88BCE /* Pods_XCShoppingCart_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -39,6 +41,9 @@
 /* Begin PBXFileReference section */
 		0645753A1A28B513949998E6 /* Pods_XCShoppingCart_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCShoppingCart_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CEEA4B41E0200E631BB468 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1E2CA48523CF00FC00566159 /* XCTTTCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCTTTCell.h; sourceTree = "<group>"; };
+		1E2CA48623CF00FC00566159 /* XCTTTCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCTTTCell.m; sourceTree = "<group>"; };
+		1E2CA48723CF00FC00566159 /* XCTTTCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XCTTTCell.xib; sourceTree = "<group>"; };
 		298965DDA8A8F6A99C9AE6E0 /* Pods-XCShoppingCart_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCShoppingCart_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCShoppingCart_Example/Pods-XCShoppingCart_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5D8F682DDCA6FF7173E88BCE /* Pods_XCShoppingCart_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCShoppingCart_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* XCShoppingCart_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCShoppingCart_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +153,9 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* XCViewController.h */,
 				6003F5A6195388D20070C39A /* XCViewController.m */,
+				1E2CA48523CF00FC00566159 /* XCTTTCell.h */,
+				1E2CA48623CF00FC00566159 /* XCTTTCell.m */,
+				1E2CA48723CF00FC00566159 /* XCTTTCell.xib */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -257,6 +265,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -278,6 +287,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				1E2CA48923CF00FC00566159 /* XCTTTCell.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -318,7 +328,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-XCShoppingCart_Example/Pods-XCShoppingCart_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-XCShoppingCart_Example/Pods-XCShoppingCart_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JSBadgeView/JSBadgeView.framework",
 				"${BUILT_PRODUCTS_DIR}/XCShoppingCart/XCShoppingCart.framework",
 			);
@@ -329,7 +339,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XCShoppingCart_Example/Pods-XCShoppingCart_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XCShoppingCart_Example/Pods-XCShoppingCart_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EF7B1405F7FCEA64BBADA041 /* [CP] Check Pods Manifest.lock */ = {
@@ -358,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* XCAppDelegate.m in Sources */,
+				1E2CA48823CF00FC00566159 /* XCTTTCell.m in Sources */,
 				6003F5A7195388D20070C39A /* XCViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

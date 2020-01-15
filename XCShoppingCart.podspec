@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XCShoppingCart'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'XCShoppingCart 自定义购物车UI页面，使用简单'
 
   s.description      = <<-DESC

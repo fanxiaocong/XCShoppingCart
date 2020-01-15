@@ -7,9 +7,9 @@
 //
 
 #import "XCViewController.h"
+#import "XCTTTCell.h"
 #import <XCShoppingCart/XCShoppingCartBar.h>
 #import <XCShoppingCart/XCShoppingCartAnimation.h>
-
 
 @interface XCViewController ()
 
@@ -28,18 +28,31 @@
     [cartBar.cartButton addTarget:self action:@selector(didClickCartButtonAction) forControlEvents:UIControlEventTouchUpInside];
     // 点击确认按钮的回调
     [cartBar.enterButton addTarget:self action:@selector(didClickEnterButtonAction) forControlEvents:UIControlEventTouchUpInside];
+        
     self.cartBar = cartBar;
     [self.view addSubview:cartBar];
     
     // 配置cell
+    __weak typeof (self)weakSelf = self;
     self.cartBar.listView.cellForRowAtIndex = ^UITableViewCell *(XCShoppingCartListView *listView, UITableView *tableView, NSInteger index) {
-        static NSString *cellID = @"cellID";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+        static NSString *cellID = @"XCTTTCell";
+        XCTTTCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
         if (!cell) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+            cell = [[[NSBundle mainBundle] loadNibNamed:cellID owner:nil options:nil] lastObject];
         }
         cell.textLabel.text = listView.dataSource[index];
+        cell.clickDeleteCallBack = ^{
+            // 删除数据
+            weakSelf.cartBar.badgeNumber --;
+            [weakSelf.cartBar.listView.dataSource removeObjectAtIndex:index];
+            // 更新UI
+            [weakSelf.cartBar refreshUI];
+        };
         return cell;
+    };
+    // 选中某一行
+    self.cartBar.listView.didSelectRowAtIndex = ^(UITableView *tableView, NSInteger index) {
+        
     };
 }
 
@@ -101,6 +114,5 @@
     NSLog(@"点击了确认按钮");
     self.cartBar.open = NO;
 }
-
 
 @end
